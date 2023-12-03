@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz@9..40&family=Inter:wght@100&family=Lato:wght@300;400;700&family=Nunito:ital,wght@0,400;0,700;1,400&family=Playfair+Display&family=Playfair+Display+SC&family=Roboto:wght@400;500;700&family=Spectral:ital,wght@0,700;1,700&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  margin: 0 auto;
+  font-family: 'Lato';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+
+.menu {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu img {
+  max-width: 80px;
+  cursor: pointer;
+}
+
+.navigator img {
+  width: 20px;
+  margin-left: 16px;
+}
+
+.banner {
+  display: block;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+}
+
+.infos p {
+  font-size: 14px;
+}
+
+.infos span {
+  font-size: 12px;
+}
+
+.itens-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: space-between;
+  padding: 0px 32px;
+}
+
+
+.item {
+  margin-top: 50px;
+}
+
+.item h2 {
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.item p {
+  margin-top: 4px;
+}
+
+.item span {
+  color: #5ca720;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.item img {
+  display: block;
+  z-index: -50;
+}
+
+.item img:hover{
+  opacity: .5;
+  transition: .3s;
+}
+
+.img-container:hover {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .3s;
+  background-color: #5ca720;
+}
+
+.item button {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #5ca720;
+  padding: 10px 24px;
+}
+
+.item button:hover {
+  transition: 0.2s;
+  background: #512200bd;
+}
+
+footer {
+  margin: 64px 0 0 0;
+  padding: 16px 32px;
+}
+
+.informacoes1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 25px;
+}
+
+.newsletter label {
+  display: block;
+}
+
+.newsletter input {
+  padding: 16px 90px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #a5a1a1;
+}
+
+.newsletter button {
+  margin: 0;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background: #5ca720;
+  color: white;
+  font-weight: bold;
+}
+
+.informacoes2-container {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacoes2-container img {
+  width: 30px;
+}
+
+@media (max-width: 750px) {
+  .itens-container {
+    grid-template-columns: 250px 250px;
+    justify-content: space-between;
+  }
+
+  .informacoes1-container{
+    display: block;
+  }
+
+  .newsletter {
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
